@@ -9,4 +9,9 @@ public class Cat implements Pet {
     public void say() {
         System.out.println("Meow!");
     }
+
+    @Override
+    public String toString() {
+        return "Cat";
+    }
 }

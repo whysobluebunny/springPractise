@@ -22,5 +22,7 @@ http://www.springframework.org/schema/context/spring-context.xsd">
           class="com.whysobluebunny.springpractise.beings.Person">
 <!--        <constructor-arg ref="myPet"/>-->
         <property name="pet" ref="myPet"/>
+        <property name="surname" value="Popov"/>
+        <property name="age" value="23"/>
     </bean>
 </beans>
