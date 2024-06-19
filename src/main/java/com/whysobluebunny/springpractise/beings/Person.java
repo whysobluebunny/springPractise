@@ -2,6 +2,8 @@ package com.whysobluebunny.springpractise.beings;
 
 public class Person {
     private Pet pet;
+    private String surname;
+    private int age;
 
     public Person() {
         System.out.println("Person() created");
@@ -18,8 +20,27 @@ public class Person {
         this.pet = pet;
     }
 
+    public void setSurname(String surname) {
+        System.out.println("Person: Set surname");
+        this.surname = surname;
+    }
+
+    public void setAge(int age) {
+        System.out.println("Person: Set age");
+        this.age = age;
+    }
+
     public void callYourPet() {
         System.out.println("Hello, my lovely Pet!");
         pet.say();
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "pet=" + pet +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
